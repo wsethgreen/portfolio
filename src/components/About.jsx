@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import resume from '../assets/seth-green-resume.pdf'
 
 const About = () => {
     return (
@@ -106,7 +108,7 @@ const About = () => {
             
                 <p className="linkedin_ref">
                     For more information about my work history, visit my <a className="body_link" href="https://www.linkedin.com/in/wsethgreen/">LinkedIn</a> or 
-                    download my <a className="body_link" href="/download">resume</a>.
+                    download my <Link to={resume} className="body_link" target="_blank" download>resume</Link>.
                 </p>
         
         </div>
